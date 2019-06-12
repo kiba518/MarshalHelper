@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarshalHelper", "MarshalHelper\MarshalHelper.csproj", "{F93C4A05-EC2C-499D-BCB7-5AA6A250516D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F93C4A05-EC2C-499D-BCB7-5AA6A250516D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93C4A05-EC2C-499D-BCB7-5AA6A250516D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93C4A05-EC2C-499D-BCB7-5AA6A250516D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93C4A05-EC2C-499D-BCB7-5AA6A250516D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78721864-05F6-4AA8-8A56-CAEC0B62D7DB}
+	EndGlobalSection
+EndGlobal
