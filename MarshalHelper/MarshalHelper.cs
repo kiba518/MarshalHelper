@@ -40,18 +40,24 @@ namespace MarshalHelper
                 return null;
             }
         }
-        public static IntPtr ByteToIntPtr(byte[] source, IntPtr pointerInt)
+        /// <summary>
+        /// 将bytelist复制到非托管内存指针IntPtr里  
+        /// </summary> 
+        /// <param name="sourceByteArray"></param> 
+        public static IntPtr ByteToIntPtr(byte[] source)
         {
             try
             {
-                Marshal.Copy(source, 0, pointerInt, source.Length);//将数据从非托管内存指针复制到托管 8 位无符号整数数组。
-                return pointerInt;
+                IntPtr destpointer = Marshal.AllocHGlobal(source.Length);
+                Marshal.Copy(source, 0, destpointer, source.Length);
+                return destpointer;
             }
             catch
             {
                 return IntPtr.Zero;
             }
         }
+       
         #endregion
 
         #region string to IntPtr / IntPtr to string
@@ -189,5 +195,8 @@ namespace MarshalHelper
             return structObject;
         }
         #endregion
+
+       
+        
     }
 }
